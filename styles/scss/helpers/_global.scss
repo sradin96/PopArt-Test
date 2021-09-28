@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wide__container {
+  max-width: 1630px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1250px;
+  padding: 0 12px;
+  margin: 0 auto;
+}

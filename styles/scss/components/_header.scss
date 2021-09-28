@@ -1,0 +1,16 @@
+.header__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navigation,
+.header__languages {
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation-block {
+  display: flex;
+  align-items: center;
+}
