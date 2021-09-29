@@ -1,7 +1,30 @@
+.header {
+  position: relative;
+  padding: 26px 0;
+}
+
 .header__block {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__logo-block {
+  position: relative;
+}
+
+.header__logo {
+  color: $white;
+  text-transform: uppercase;
+  font-family: $roboto;
+  position: absolute;
+  font-size: 30px;
+  top: 8px;
+  left: 37px;
+}
+
+.logo--regular {
+  font-weight: 400;
 }
 
 .header__navigation,
@@ -10,7 +33,79 @@
   align-items: center;
 }
 
+.header__list {
+  margin-left: 25px;
+}
+
+.header__link {
+  font-size: 16px;
+  font-family: $roboto;
+  text-transform: uppercase;
+  color: $white;
+  display: inline-block;
+}
+
+.header__link.active {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background: $blue;
+    width: 100%;
+    height: 2px;
+    bottom: -40px;
+    left: 0;
+  }
+}
+
+.header__languages {
+  margin-left: 75px;
+}
+
+.link--gray {
+  opacity: 0.2;
+}
+
 .header__navigation-block {
   display: flex;
   align-items: center;
+}
+
+.temporary {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  margin-left: 70px;
+  background: $blue;
+  display: flex;
+  align-items: center;
+  padding: 18px 14px 18px 30px;
+  z-index: 99;
+}
+
+.temporary__text {
+  color: $white;
+  font-size: 16px;
+  font-family: $roboto;
+  margin-right: 5px;
+  letter-spacing: -0.1px;
+}
+
+.temporary.remove-block {
+  display: none;
+}
+
+.temporary__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: $transition;
+  &:hover {
+    border: 1px solid $white;
+  }
 }

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/css/main.css">
+    <link rel="icon" type="image" href="./images/NADAMACURA.png">
     <title>NADAMACURA</title>
 </head>
 <body>
@@ -15,11 +16,12 @@
         <div class="wide__container">
             <div class="header__block">
                 <div class="header__logo-block">
-                    <h2 class="header__logo">Nadamacura</h2>
+                    <img src="./images/logo.png" alt="" class="header__logo-img">
+                    <h2 class="header__logo">Nada<span class="logo--regular">macura</span></h2>
                 </div>
                 <div class="header__navigation-block">
                     <ul class="header__navigation">
-                        <li class="header__list"><a href="javascript:;" class="header__link">Homepage</a></li>
+                        <li class="header__list"><a href="javascript:;" class="header__link active">Homepage</a></li>
                         <li class="header__list"><a href="javascript:;" class="header__link">About</a></li>
                         <li class="header__list"><a href="javascript:;" class="header__link">Services</a></li>
                         <li class="header__list"><a href="javascript:;" class="header__link">References</a></li>
@@ -35,17 +37,29 @@
         </div>
         <div class="temporary">
             <p class="temporary__text">You're looking at a temporary website version, You're looking at a temporary website version You're looking at a temporary.</p>
-            <img src="./images/Icon.png" alt="" class="temporary__img">
+            <a href="javascript:;" class="temporary__cta"><img src="./images/Icon.png" alt="" class="temporary__img"></a>
         </div>
     </header>
-    <section class="banner">
+    <section class="banner" style="background-image: url(./images/Clip.png);">
+        <div class="banner__eclipse">
+            <img src="./images/clip-shadow.png" alt="" class="banner__eclipse-img">
+        </div>
         <div class="container">
-            <h1 class="banner__title">Lorem ipsum has been the industry's.</h1>
-            <p class="banner__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <a href="" class="banner__cta">Tell me more</a>
+            <div class="banner__block">
+                <h1 class="banner__title">Lorem ipsum has been the industry's.</h1>
+                <p class="banner__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <a href="" class="banner__cta">Tell me more</a>
+            </div>
+        </div>
+        <div class="banner__side-boxes">
+            <img src="./images/gray-box.png" alt="" class="banner__side-gray-box">
+            <img src="./images/blue-box.png" alt="" class="banner__side-blue-box">
         </div>
     </section>
     <section class="train">
+        <div class="train__stars">
+            <img src="./images/start-background.png" alt="" class="train__stars-img">
+        </div>
         <div class="container">
             <h2 class="train__title">Train your train.</h2>
             <p class="train__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
@@ -92,53 +106,59 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="cards">
-        <div class="container">
-            <h2 class="cards__title">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's:</h2>
-            <div class="cards__block">
-                <div class="card">
-                    <div class="card__title">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</div>
-                    <p class="card__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, even slightly believable.</p>
-                </div>
-                <div class="card">
-                    <div class="card__title">lorem ipsum lorem ipsum</div>
-                    <p class="card__text">There are many variations of passages of Lorem Ipsum available,</p>
-                </div>
-                <div class="card">
-                    <div class="card__title">Ispum lorem ipsum ispum lorem ipsum ispum lorem ipsum</div>
-                </div>
-                <div class="card">
-                    <div class="card__title">Ispum lorem ipsum ispum lorem ipsum ispum lorem ipsum</div>
-                </div>
-                <div class="card">
-                    <div class="card__title">Ispum lorem ipsum ispum lorem ipsum</div>
-                    <p class="card__text">Lorem ipsum lorem ipsum lorem ipsum</p>
-                </div>
-                <div class="card">
-                    <div class="card__title">Ispum lorem ipsum ispum lorem ipsum ispum lorem ipsum</div>
-                </div>
-                <div class="card">
-                    <div class="card__title">Ispum lorem ipsum ispum lorem ipsum ispum lorem ipsum</div>
-                </div>
-                <div class="card">
-                    <div class="card__title">Ispum lorem ipsum ispum lorem ipsum ispum lorem ipsum</div>
-                    <p class="card__text">There are many variations of passages of Lorem Ipsum available,</p>
-                </div>
-            </div>
-            <div class="cards__cta">All services</div>
+        <div class="train__side-boxes">
+            <img src="./images/white-box.png" alt="" class="train__side-white-box">
+            <img src="./images/blue-box.png" alt="" class="train__side-blue-box">
+            <img src="./images/side-shadow.png" alt="" class="train__side-shadow">
         </div>
     </section>
+    <section class="cards">
+        <div class="cards__stars">
+            <img src="./images/start-background.png" class="cards__stars-img">
+        </div>
+        <h2 class="cards__title">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's:</h2>
+        <div class="cards__block">
+            <div class="card">
+                <div class="card__title">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</div>
+                <p class="card__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, even slightly believable.</p>
+            </div>
+            <div class="card">
+                <div class="card__title">lorem ipsum lorem ipsum</div>
+                <p class="card__text">There are many variations of passages of Lorem Ipsum available,</p>
+            </div>
+            <div class="card">
+                <div class="card__title">Ispum lorem ipsum ispum lorem ipsum ispum lorem ipsum</div>
+            </div>
+            <div class="card">
+                <div class="card__title">Ispum lorem ipsum ispum lorem ipsum ispum lorem ipsum</div>
+            </div>
+            <div class="card">
+                <div class="card__title">Ispum lorem ipsum ispum lorem ipsum</div>
+                <p class="card__text">Lorem ipsum lorem ipsum lorem ipsum</p>
+            </div>
+            <div class="card">
+                <div class="card__title">Ispum lorem ipsum ispum lorem ipsum ispum lorem ipsum</div>
+            </div>
+            <div class="card">
+                <div class="card__title">Ispum lorem ipsum ispum lorem ipsum ispum lorem ipsum</div>
+            </div>
+            <div class="card">
+                <div class="card__title">Ispum lorem ipsum ispum lorem ipsum ispum lorem ipsum</div>
+                <p class="card__text">There are many variations of passages of Lorem Ipsum available,</p>
+            </div>
+        </div>
+        <a href="javascript:;" class="cards__cta">All services</a>
+    </section>
     <section class="reference">
-        <div class="container">
+        <div class="wide__container">
             <div class="reference__box">
                 <p class="reference__box-text">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"  - Jack Welch</p>
             </div>
             <div class="reference__block">
                 <div class="reference__content">
                     <h2 class="reference__title">References.</h2>
-                    <p class="reference__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                    <p class="reference__text">- John Doe,    China (Contrary to popular belief, Lorem. professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of</p>
+                    <p class="reference__text-top">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                    <p class="reference__text-bottom"><span class="text--bold">- John Doe,</span>    China (Contrary to popular belief, Lorem. professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of</p>
                     <a href="javascript:;" class="reference__cta">All references</a>
                 </div>
                 <div class="reference__img-block">
@@ -229,5 +249,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>

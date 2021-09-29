@@ -1,0 +1,87 @@
+.train {
+  position: relative;
+  margin-bottom: 320px;
+}
+
+.train__stars {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.train__title {
+  color: $white;
+  font-size: 60px;
+  font-weight: 200;
+  text-align: center;
+  font-family: $roboto;
+  margin-bottom: 18px;
+}
+
+.train__text {
+  text-align: center;
+  max-width: 660px;
+  margin: 0 auto 80px auto;
+  color: $white;
+  font-size: 16px;
+  font-family: $lato;
+  line-height: 1.6;
+}
+
+.train__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.train__box {
+  width: 20%;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid $gray-opacity;
+  border-top: 1px solid $gray-opacity;
+  &:nth-child(-n + 5) {
+    border-top: none;
+  }
+  &:nth-child(5),
+  &:nth-child(10) {
+    border-right: none;
+  }
+}
+
+.train__img {
+  margin-bottom: 5px;
+}
+
+.train__semitext {
+  font-size: 20px;
+  font-family: $roboto;
+  color: $white;
+}
+
+.train__side-boxes {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-270px, 445px);
+}
+
+.train__side-blue-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  transform: translate(-75px, -60px);
+}
+
+.train__side-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-600px, 45%);
+}
