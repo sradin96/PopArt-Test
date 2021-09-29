@@ -1,0 +1,44 @@
+.contact {
+  position: relative;
+  margin-bottom: 330px;
+}
+
+.footer__logo-block {
+  position: relative;
+}
+
+.footer__logo {
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+
+.contact__title {
+  font-size: 40px;
+  font-family: $roboto;
+  font-weight: 300;
+  text-align: center;
+  color: $white;
+  margin-bottom: 41px;
+}
+
+.contact__cta {
+  display: inline-block;
+  padding: 19px 70px;
+  background: $blue;
+  color: $white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: $roboto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact__img-block {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(265px, -300px);
+  z-index: -1;
+}

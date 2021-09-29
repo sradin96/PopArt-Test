@@ -9,6 +9,7 @@
   left: 0;
   transform: translateY(-150px);
   z-index: -1;
+  pointer-events: none;
 }
 
 .cards__title {
@@ -62,7 +63,7 @@
   transform: translateX(-50%);
   justify-content: center;
   padding: 18px 70px;
+  font-family: $roboto;
   color: $white;
   border: 1px solid $white;
-  font-family: $roboto;
 }

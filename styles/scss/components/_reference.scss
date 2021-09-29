@@ -1,3 +1,24 @@
+.reference {
+  position: relative;
+}
+
+.reference__trophy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-300px, -700px);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.reference__stars {
+  position: absolute;
+  z-index: -2;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-50px);
+}
+
 .reference__box {
   margin: 0 auto 175px auto;
   width: 1120px;
@@ -32,7 +53,7 @@
     font-size: 150px;
     font-family: $roboto;
     font-style: italic;
-    transform: translate(-15px, 0px);
+    transform: translate(-95px, 10px);
   }
   &::after {
     content: "''";
@@ -87,4 +108,27 @@
 
 .reference__img-block {
   transform: translateY(-30px);
+}
+
+.reference__side-boxes {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.reference__side-shadow {
+  transform: translate(1100px, 800px) rotate(180deg);
+  z-index: -1;
+}
+
+.reference__side-white-box {
+  transform: translate(1480px, 2500px);
+  width: 1000px;
+}
+
+.reference__side-blue-box {
+  transform: translate(660px, 1820px);
+  width: 105px;
 }
