@@ -1,6 +1,7 @@
 .header {
   position: relative;
   padding: 26px 0;
+  z-index: 999;
 }
 
 .header__block {
@@ -33,8 +34,18 @@
   align-items: center;
 }
 
+.header__navigation {
+  @include tablet-screen {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}
+
 .header__list {
   margin-left: 25px;
+  @include tablet-screen {
+    margin: 20px 0;
+  }
 }
 
 .header__link {
@@ -58,6 +69,11 @@
   &:hover::before {
     width: 100%;
   }
+  @include tablet-screen {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .header__link.active {
@@ -71,10 +87,24 @@
     bottom: -40px;
     left: 0;
   }
+  @include tablet-screen {
+    &::after {
+      bottom: -10px;
+    }
+  }
 }
 
 .header__languages {
   margin-left: 75px;
+  @include tablet-screen {
+    margin-left: 0;
+  }
+}
+
+.languages--list {
+  @include tablet-screen {
+    margin: 0 20px;
+  }
 }
 
 .link--gray {
@@ -84,6 +114,26 @@
 .header__navigation-block {
   display: flex;
   align-items: center;
+  @include tablet-screen {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    background: $dark-gray;
+    opacity: 0;
+    transition: $transition;
+    z-index: 999;
+    flex-direction: column;
+    padding-top: 60px;
+  }
+}
+
+.header__navigation-block.active-menu {
+  top: 102px;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .temporary {
@@ -97,6 +147,17 @@
   align-items: center;
   padding: 18px 14px 18px 30px;
   z-index: 99;
+  @include tablet-screen {
+    margin-left: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+  }
+  @include phone-screen {
+    transform: translate(-50%, 75px);
+  }
 }
 
 .temporary__text {
@@ -105,6 +166,9 @@
   font-family: $roboto;
   margin-right: 5px;
   letter-spacing: -0.1px;
+  @include phone-screen {
+    font-size: 14px;
+  }
 }
 
 .temporary.remove-block {
@@ -122,5 +186,45 @@
   transition: $transition;
   &:hover {
     border: 1px solid $white;
+  }
+}
+
+.header__menu {
+  display: none;
+  @include tablet-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: transparent;
+  }
+}
+
+.header__menu-link {
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background: $white;
+  position: relative;
+  pointer-events: none;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: $white;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: $white;
   }
 }

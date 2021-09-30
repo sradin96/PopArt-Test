@@ -1,6 +1,9 @@
 .cards {
   position: relative;
   margin-bottom: 218px;
+  @include tablet-screen {
+    margin-bottom: 100px;
+  }
 }
 
 .cards__stars {
@@ -20,6 +23,15 @@
   margin-bottom: 8px;
   margin-left: 320px;
   color: $white;
+  @include tablet-screen {
+    margin-left: 0;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 32px;
+  }
+  @include phone-screen {
+    font-size: 22px;
+  }
 }
 
 .cards__block {
@@ -28,6 +40,11 @@
   flex-wrap: wrap;
   margin-left: 290px;
   margin-bottom: 5px;
+  @include tablet-screen {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
 }
 
 .card {
@@ -40,6 +57,14 @@
   flex-direction: column;
   justify-content: center;
   padding: 25px 10px 20px 32px;
+  @include tablet-screen {
+    margin: 0 30px 20px;
+    min-height: 200px;
+    z-index: 9;
+  }
+  @include small-tablet-screen {
+    box-shadow: 0 3px 5px -2px black;
+  }
 }
 
 .card__title {
@@ -47,6 +72,12 @@
   font-weight: 500;
   font-family: $roboto;
   color: $white;
+  @include tablet-screen {
+    font-size: 18px;
+  }
+  @include phone-screen {
+    font-size: 16px;
+  }
 }
 
 .card__text {
@@ -54,6 +85,9 @@
   font-family: $lato;
   color: $white;
   line-height: 1.7;
+  @include tablet-screen {
+    font-size: 14px;
+  }
 }
 
 .cards__cta {

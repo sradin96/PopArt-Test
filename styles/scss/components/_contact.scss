@@ -1,16 +1,9 @@
 .contact {
   position: relative;
   margin-bottom: 330px;
-}
-
-.footer__logo-block {
-  position: relative;
-}
-
-.footer__logo {
-  position: absolute;
-  top: 0;
-  left: 40px;
+  @include tablet-screen {
+    margin-bottom: 430px;
+  }
 }
 
 .contact__title {
@@ -20,6 +13,14 @@
   text-align: center;
   color: $white;
   margin-bottom: 41px;
+  @include tablet-screen {
+    font-size: 32px;
+  }
+  @include phone-screen {
+    font-size: 26px;
+    max-width: 300px;
+    margin: 0 auto 40px auto;
+  }
 }
 
 .contact__cta {
@@ -41,4 +42,10 @@
   top: 0;
   transform: translate(265px, -300px);
   z-index: -1;
+  @include tablet-screen {
+    transform: translate(0, -300px);
+  }
+  @include phone-screen {
+    transform: translate(50%, -300px);
+  }
 }

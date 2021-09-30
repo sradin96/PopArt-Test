@@ -1,6 +1,9 @@
 .train {
   position: relative;
   margin-bottom: 320px;
+  @include tablet-screen {
+    margin-bottom: 250px;
+  }
 }
 
 .train__stars {
@@ -18,6 +21,12 @@
   text-align: center;
   font-family: $roboto;
   margin-bottom: 18px;
+  @include tablet-screen {
+    font-size: 42px;
+  }
+  @include phone-screen {
+    font-size: 32px;
+  }
 }
 
 .train__text {
@@ -28,6 +37,9 @@
   font-size: 16px;
   font-family: $lato;
   line-height: 1.6;
+  @include tablet-screen {
+    font-size: 14px;
+  }
 }
 
 .train__block {
@@ -63,6 +75,12 @@
   font-size: 20px;
   font-family: $roboto;
   color: $white;
+  @include tablet-screen {
+    font-size: 18px;
+  }
+  @include phone-screen {
+    font-size: 14px;
+  }
 }
 
 .train__side-boxes {
@@ -71,6 +89,12 @@
   bottom: 0;
   transform: translate(-270px, 445px);
   pointer-events: none;
+  @include tablet-screen {
+    transform: translate(-350px, 445px);
+  }
+  @include phone-screen {
+    transform: translate(-400px, 445px);
+  }
 }
 
 .train__side-blue-box {
@@ -79,6 +103,9 @@
   right: 0;
   width: 100px;
   transform: translate(-75px, -60px);
+  @include tablet-screen {
+    transform: translate(-20px, -130px);
+  }
 }
 
 .train__side-shadow {

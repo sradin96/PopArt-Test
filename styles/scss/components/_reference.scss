@@ -21,11 +21,19 @@
 
 .reference__box {
   margin: 0 auto 175px auto;
-  width: 1120px;
-  height: 180px;
+  max-width: 1120px;
+  min-height: 180px;
   padding: 40px 100px;
   text-align: center;
   background-color: $blue;
+  @include tablet-screen {
+    min-height: 100px;
+    padding: 40px 60px;
+    margin-bottom: 100px;
+  }
+  @include phone-screen {
+    padding: 20px 30px;
+  }
 }
 
 .reference__box-text {
@@ -33,6 +41,12 @@
   font-family: $roboto;
   font-style: italic;
   color: $white;
+  @include tablet-screen {
+    font-size: 22px;
+  }
+  @include phone-screen {
+    font-size: 16px;
+  }
 }
 
 .reference__block {
@@ -40,6 +54,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 55px 0 270px;
+  @include tablet-screen {
+    padding: 0 0 0 50px;
+    justify-content: flex-start;
+  }
+  @include phone-screen {
+    flex-direction: column;
+  }
 }
 
 .reference__content {
@@ -53,7 +74,7 @@
     font-size: 150px;
     font-family: $roboto;
     font-style: italic;
-    transform: translate(-95px, 10px);
+    transform: translate(-75px, 10px);
   }
   &::after {
     content: "''";
@@ -74,6 +95,12 @@
   color: $white;
   margin-bottom: 25px;
   font-weight: 400;
+  @include tablet-screen {
+    font-size: 32px;
+  }
+  @include phone-screen {
+    font-size: 26px;
+  }
 }
 
 .reference__text-top {
@@ -83,6 +110,9 @@
   font-style: italic;
   margin-bottom: 20px;
   line-height: 1.5;
+  @include tablet-screen {
+    font-size: 14px;
+  }
 }
 
 .reference__text-bottom {
@@ -91,6 +121,9 @@
   font-family: $lato;
   margin-bottom: 28px;
   line-height: 1.5;
+  @include tablet-screen {
+    font-size: 14px;
+  }
 }
 
 .text--bold {
@@ -108,6 +141,14 @@
 
 .reference__img-block {
   transform: translateY(-30px);
+  @include tablet-screen {
+    width: 400px;
+    transform: translateY(-80px);
+  }
+}
+
+.reference__img {
+  width: 500px;
 }
 
 .reference__side-boxes {

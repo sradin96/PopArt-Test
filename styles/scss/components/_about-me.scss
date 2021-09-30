@@ -1,6 +1,9 @@
 .about-me {
   position: relative;
   margin-bottom: 145px;
+  @include tablet-screen {
+    margin-bottom: 50px;
+  }
 }
 
 .about-me__stars {
@@ -15,6 +18,13 @@
   display: flex;
   align-items: center;
   padding-left: 145px;
+  @include tablet-screen {
+    padding-left: 50px;
+  }
+  @include phone-screen {
+    flex-direction: column;
+    padding: 0 12px;
+  }
 }
 
 .about-me__content {
@@ -27,6 +37,12 @@
   font-weight: 400;
   font-family: $roboto;
   margin-bottom: 30px;
+  @include tablet-screen {
+    font-size: 32px;
+  }
+  @include phone-screen {
+    font-size: 26px;
+  }
 }
 
 .about-me__text {
@@ -36,6 +52,10 @@
   max-width: 640px;
   line-height: 1.6;
   margin-bottom: 50px;
+  @include tablet-screen {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 
 .about-me__cta {
@@ -50,6 +70,24 @@
 
 .about-me__img-block {
   transform: translateY(-10px);
+  @include tablet-screen {
+    width: 400px;
+    transform: translate(-160px, -10px);
+  }
+  @include phone-screen {
+    width: 400px;
+    margin: auto;
+    transform: translate(0, 0);
+  }
+}
+
+.about-me__img {
+  @include tablet-screen {
+    width: 600px;
+  }
+  @include phone-screen {
+    width: 350px;
+  }
 }
 
 .about-me__side-boxes {
@@ -65,11 +103,23 @@
   transform: translate(160px, 460px);
   width: 105px;
   z-index: 2;
+  @include tablet-screen {
+    transform: translate(-50px, 360px);
+  }
+  @include phone-screen {
+    transform: translate(-20px, 180px);
+  }
 }
 
 .about-me__side-blue-box {
   position: absolute;
   transform: translate(-1220px, -500px);
+  @include tablet-screen {
+    transform: translate(-1500px, -530px);
+  }
+  @include phone-screen {
+    transform: translate(-1550px, -640px);
+  }
 }
 
 .about-me__side-shadow {
