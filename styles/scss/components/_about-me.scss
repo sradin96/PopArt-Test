@@ -21,7 +21,7 @@
   @include tablet-screen {
     padding-left: 50px;
   }
-  @include phone-screen {
+  @include small-tablet-screen {
     flex-direction: column;
     padding: 0 12px;
   }
@@ -66,11 +66,16 @@
   font-family: $roboto;
   font-size: 16px;
   font-weight: 500;
+  transition: $transition;
+  &:hover {
+    background: $white;
+    color: $dark-gray;
+  }
 }
 
 .about-me__img-block {
   transform: translateY(-10px);
-  @include tablet-screen {
+  @include laptop-screen {
     width: 400px;
     transform: translate(-160px, -10px);
   }
@@ -82,7 +87,7 @@
 }
 
 .about-me__img {
-  @include tablet-screen {
+  @include laptop-screen {
     width: 600px;
   }
   @include phone-screen {

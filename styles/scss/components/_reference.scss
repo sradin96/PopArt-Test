@@ -44,7 +44,7 @@
   @include tablet-screen {
     font-size: 22px;
   }
-  @include phone-screen {
+  @include small-tablet-screen {
     font-size: 16px;
   }
 }
@@ -54,12 +54,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 55px 0 270px;
-  @include tablet-screen {
+  @include laptop-screen {
     padding: 0 0 0 50px;
     justify-content: flex-start;
   }
-  @include phone-screen {
+  @include small-tablet-screen {
     flex-direction: column;
+    padding-left: 20px;
   }
 }
 
@@ -75,6 +76,10 @@
     font-family: $roboto;
     font-style: italic;
     transform: translate(-75px, 10px);
+    @include small-tablet-screen {
+      font-size: 80px;
+      transform: translate(-40px, 30px);
+    }
   }
   &::after {
     content: "''";
@@ -86,6 +91,10 @@
     font-family: $roboto;
     font-style: italic;
     transform: translate(15px, -10px);
+    @include phone-screen {
+      font-size: 80px;
+      transform: translate(0px, -20px);
+    }
   }
 }
 
@@ -137,6 +146,11 @@
   border: 1px solid $white;
   padding: 18px 60px;
   font-family: $roboto;
+  transition: $transition;
+  &:hover {
+    background: $white;
+    color: $dark-gray;
+  }
 }
 
 .reference__img-block {
@@ -145,10 +159,16 @@
     width: 400px;
     transform: translateY(-80px);
   }
+  @include phone-screen {
+    transform: translateY(0);
+  }
 }
 
 .reference__img {
   width: 500px;
+  @include phone-screen {
+    width: 350px;
+  }
 }
 
 .reference__side-boxes {
@@ -167,6 +187,9 @@
 .reference__side-white-box {
   transform: translate(1480px, 2500px);
   width: 1000px;
+  @include phone-screen {
+    transform: translate(1500px, 2690px);
+  }
 }
 
 .reference__side-blue-box {

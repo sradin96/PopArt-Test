@@ -134,6 +134,9 @@
   top: 102px;
   opacity: 1;
   pointer-events: all;
+  @include phone-screen {
+    top: 80px;
+  }
 }
 
 .temporary {
@@ -226,5 +229,12 @@
     width: 50px;
     height: 4px;
     background: $white;
+  }
+  @include phone-screen {
+    width: 40px;
+    &::after,
+    &::before {
+      width: 40px;
+    }
   }
 }

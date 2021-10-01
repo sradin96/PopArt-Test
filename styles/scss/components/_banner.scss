@@ -6,7 +6,7 @@
   margin-bottom: 30px;
   width: 100%;
   overflow: hidden;
-  @include tablet-screen {
+  @include laptop-screen {
     background-position: center top;
   }
   @include phone-screen {
@@ -69,12 +69,18 @@
 
 .banner__cta {
   display: inline-block;
-  padding: 18px 41px;
+  padding: 17px 40px;
   font-size: 16px;
   font-family: $roboto;
   font-weight: 500;
   background: $blue;
   color: $white;
+  border: 1px solid $blue;
+  transition: $transition;
+  &:hover {
+    background: transparent;
+    border: 1px solid $white;
+  }
   @include phone-screen {
     font-size: 14px;
   }

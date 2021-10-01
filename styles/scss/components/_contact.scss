@@ -25,7 +25,7 @@
 
 .contact__cta {
   display: inline-block;
-  padding: 19px 70px;
+  padding: 18px 69px;
   background: $blue;
   color: $white;
   font-size: 16px;
@@ -34,6 +34,12 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  transition: $transition;
+  border: 1px solid $blue;
+  &:hover {
+    background: transparent;
+    border: 1px solid $white;
+  }
 }
 
 .contact__img-block {

@@ -69,6 +69,10 @@
 
 .train__img {
   margin-bottom: 5px;
+  @include phone-screen {
+    width: 25px;
+    height: 35px;
+  }
 }
 
 .train__semitext {
@@ -79,7 +83,7 @@
     font-size: 18px;
   }
   @include phone-screen {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
